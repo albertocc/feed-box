@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Update gist
         uses: albertocc/rss-box@master
-    # env:
-    #   GH_TOKEN: ´${{ secrets.GH_TOKEN }}´
-    #   GIST_ID: '05c75f4491d78792c767ac8bc07d7e46'
-    #   RSS_URL: 'https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=rss'
+    env:
+      GH_TOKEN: ´${{ secrets.GH_TOKEN }}´
+      GIST_ID: '05c75f4491d78792c767ac8bc07d7e46'
+      RSS_URL: 'https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=rss'

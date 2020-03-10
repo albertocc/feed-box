@@ -2,7 +2,7 @@ const { GistBox } = require('gist-box')
 const Parser = require('rss-parser')
 const parser = new Parser()
 const maxLength = 40 // 55 per line
-const { GITHUB_TOKEN: token, GIST_ID: id, RSS_URL: url } = steps.env;
+const { GH_TOKEN: token, GIST_ID: id, RSS_URL: url } = steps.env;
 
 (async () => {
   const feed = await parser.parseURL(url)

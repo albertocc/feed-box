@@ -7348,7 +7348,7 @@ const { GistBox } = __webpack_require__(45)
 const Parser = __webpack_require__(865)
 const parser = new Parser()
 const maxLength = 40 // 55 per line
-const { GH_TOKEN: token, GIST_ID: id, RSS_URL: url } = steps.env;
+const { GH_TOKEN: token, GIST_ID: id, RSS_URL: url } = process.env;
 
 (async () => {
   const feed = await parser.parseURL(url)

@@ -7,7 +7,7 @@ const { GH_TOKEN: token, GIST_ID: id, RSS_URL: url } = process.env;
 (async () => {
   const feed = await parser.parseURL(url)
 
-  let content = ''
+  let content
   feed.items.slice(0, 5).forEach(item => {
     content += `${trimTitle(item.title)} 📆 ${parseDate(item.pubDate)}\n`
   })

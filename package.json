@@ -1,0 +1,23 @@
+{
+  "name": "rss-box",
+  "version": "1.0.0",
+  "description": "Update a pinned gist with RSS feed",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertocc/rss-box.git"
+  },
+  "author": "albertocc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albertocc/rss-box/issues"
+  },
+  "homepage": "https://github.com/albertocc/rss-box#readme",
+  "dependencies": {
+    "gist-box": "^0.3.0",
+    "rss-parser": "^3.7.5"
+  }
+}

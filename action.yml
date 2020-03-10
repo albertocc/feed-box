@@ -1,0 +1,5 @@
+name: 'rss-box'
+description: 'Update a pinned gist with RSS feed'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

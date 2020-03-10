@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - name: Update gist
+        uses: albertocc/rss-box@master
     # env:
     #   GH_TOKEN: ´${{ secrets.GH_TOKEN }}´
     #   GIST_ID: '05c75f4491d78792c767ac8bc07d7e46'

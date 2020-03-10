@@ -6,7 +6,7 @@ jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GIST_ID: 05c75f4491d78792c767ac8bc07d7e46

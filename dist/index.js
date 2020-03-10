@@ -7348,11 +7348,7 @@ const { GistBox } = __webpack_require__(45)
 const Parser = __webpack_require__(865)
 const parser = new Parser()
 const maxLength = 40 // 55 per line
-// const { GH_TOKEN: token } = steps.env;
-
-const token = '50b3c0ff82176d7916450388881496864405823d'
-const id = '05c75f4491d78792c767ac8bc07d7e46'
-const url = 'https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=rss';
+const { GH_TOKEN: token, GIST_ID: id, RSS_URL: url } = steps.env;
 
 (async () => {
   const feed = await parser.parseURL(url)

@@ -1,3 +1,4 @@
+require("dotenv").config()
 const { GistBox } = require('gist-box')
 const Parser = require('rss-parser')
 const parser = new Parser()

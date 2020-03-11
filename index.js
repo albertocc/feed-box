@@ -3,8 +3,7 @@ const { GistBox } = require('gist-box')
 const Parser = require('rss-parser')
 const parser = new Parser()
 const maxLength = 40 // 55 per line
-const { GH_TOKEN: token, GIST_ID: id} = process.env;
-const url = 'https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=rss';
+const { GH_TOKEN: token, GIST_ID: id, RSS_URL: url } = process.env;
 
 (async () => {
   const feed = await parser.parseURL(url)

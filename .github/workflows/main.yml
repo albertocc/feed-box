@@ -1,4 +1,4 @@
-name: Update a pinned gist with RSS feed
+name: Update a pinned gist with an RSS/Atom feed
 on:
   schedule:
     - cron: "*/5 * * * *" # Se ejecuta cada 5 minutos!
@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Update gist
-        uses: albertocc/rss-box@master
+        uses: albertocc/feed-box@master
     env:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
       GIST_ID: 05c75f4491d78792c767ac8bc07d7e46

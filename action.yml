@@ -1,5 +1,5 @@
-name: 'rss-box'
-description: 'Update a pinned gist with RSS feed'
+name: 'feed-box'
+description: 'Update a pinned gist with an RSS/Atom feed'
 runs:
   using: 'node12'
   main: 'dist/index.js'

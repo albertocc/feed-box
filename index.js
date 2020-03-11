@@ -1,4 +1,4 @@
-require("dotenv").config()
+require('dotenv').config()
 const { GistBox } = require('gist-box')
 const Parser = require('rss-parser')
 const parser = new Parser()
@@ -16,13 +16,8 @@ const { GH_TOKEN: token, GIST_ID: id, RSS_URL: url } = process.env;
   const box = new GistBox({ id, token })
   await box.update({
     filename: feed.title,
-    description: ':pencil: A new description',
     content: content
   })
-  // console.log(feed.title)
-  // feed.items.slice(0, 5).forEach(item => {
-  //   console.log(`* ${trimTitle(item.title)} (${parseDate(item.pubDate)})`)
-  // })
 })()
 
 const parseDate = date => {

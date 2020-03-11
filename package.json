@@ -2,7 +2,7 @@
   "name": "rss-box",
   "version": "1.0.0",
   "description": "Update a pinned gist with RSS feed",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "ncc build index.js"
   },

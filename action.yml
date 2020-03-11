@@ -1,5 +1,8 @@
 name: 'feed-box'
 description: 'Update a pinned gist with an RSS/Atom feed'
+branding:
+  icon: 'rss'
+  color: 'orange'
 runs:
   using: 'node12'
   main: 'dist/index.js'

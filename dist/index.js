@@ -3968,7 +3968,7 @@ __webpack_require__(792).config()
 const { GistBox } = __webpack_require__(85)
 const Parser = __webpack_require__(146)
 const parser = new Parser()
-const maxLength = 40 // 55 per line
+const maxLength = 38 // 55 per line
 const { GH_TOKEN: token, GIST_ID: id, RSS_URL: url } = process.env;
 
 (async () => {
@@ -3976,12 +3976,12 @@ const { GH_TOKEN: token, GIST_ID: id, RSS_URL: url } = process.env;
 
   let content = ''
   feed.items.slice(0, 5).forEach(item => {
-    content += `${trimTitle(item.title)} 📆 ${parseDate(item.pubDate)}\n`
+    content += `• ${trimTitle(item.title)} 📆 ${parseDate(item.pubDate)}\n`;
   })
 
   const box = new GistBox({ id, token })
   await box.update({
-    filename: feed.title,
+    filename: `📰 ${feed.title}`,
     content: content
   })
 })()

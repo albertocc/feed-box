@@ -1,0 +1,24 @@
+{
+  "name": "feed-box",
+  "version": "1.0.0",
+  "description": "Update a pinned gist with an RSS/Atom feed",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertocc/feed-box.git"
+  },
+  "author": "albertocc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albertocc/feed-box/issues"
+  },
+  "homepage": "https://github.com/albertocc/feed-box#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "gist-box": "^0.3.0",
+    "rss-parser": "^3.7.5"
+  }
+}

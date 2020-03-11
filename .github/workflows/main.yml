@@ -1,0 +1,15 @@
+name: Update a pinned gist with an RSS/Atom feed
+on:
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Update gist
+        uses: albertocc/feed-box@master
+    env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      GIST_ID: 05c75f4491d78792c767ac8bc07d7e46
+      RSS_URL: 'https://en.wikinews.org/w/index.php?title=Special:NewsFeed&feed=atom'

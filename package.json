@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/albertocc/feed-box#readme",
   "dependencies": {
+    "@vercel/ncc": "^0.24.1",
     "dotenv": "^8.2.0",
     "gist-box": "^0.3.0",
     "rss-parser": "^3.7.5"

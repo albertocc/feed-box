@@ -1,6 +1,6 @@
 {
   "name": "feed-box",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Update a pinned gist with an RSS/Atom feed",
   "main": "dist/index.js",
   "scripts": {

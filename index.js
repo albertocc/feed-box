@@ -2,7 +2,7 @@ require('dotenv').config()
 const { GistBox } = require('gist-box')
 const Parser = require('rss-parser')
 const parser = new Parser()
-const maxLength = 38 // max 55 per line (- date & bullet point)
+const maxLength = 37 // max 54 per line (- date & bullet point)
 const { GH_TOKEN: token, GIST_ID: id, RSS_URL: url } = process.env;
 
 (async () => {
